@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Seller Dashboard</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- animated css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- Roboto font's link -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- Our Custom CSS -->
+
+    <link rel="stylesheet" href="style_seller_dashboard.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <button type="button" class="mx-auto d-block model_none_btn" data-toggle="modal" data-target="#myModal">
+                    <img class="admn_pro_pic img-fluid mx-auto d-block wow animate__bounceIn" src="imgs/user_pro_pic.png">
+                </button>
+
+                
+                <h3 class="mt-3 ml-4">Seller name</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                    <p class="ml-2">
+                        <img src="imgs/Icon awesome-phone-alt.png" class="mr-1">
+                        +88 018 119379173
+                    </p>
+                    <p class="ml-2">
+                        <img src="imgs/Icon ionic-ios-mail.png" class="mr-1">
+                        emailaddress@gmail.com
+                    </p>
+                    <p class="ml-2">
+                        <img src="imgs/Icon material-location-on.png" class="mr-1">
+                        29, Area name, District
+                    </p>
+                    <p class="ml-2 my-0" style="color: #C7C7C7;">
+                        NID No. XXX XXXX XXXX
+                    </p>
+                    <p class="ml-2 my-0" style="color: #C7C7C7;">
+                        Trade License: XXX XXXX XXXX
+                    </p>
+                
+                
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="index.html" class="download">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+
+       
+
+        <!-- Page Content  -->
+        <div id="contentdshbrd">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+
+
+                    <img src="imgs/logo.png" class="logo_admn_mdl wow animate__rubberBand">
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="d-block model_none_btn" data-toggle="modal" data-target="#ntic_modal">
+                                        <img class="img-fluid hd_sml_img" src="imgs/Icon material-notifications.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="d-block model_none_btn" data-toggle="modal" data-target="#edite_modal">
+                                        <img class="img-fluid hd_sml_img" src="imgs/Icon feather-edit.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="d-block model_none_btn" data-toggle="modal" data-target="#myModal">
+                                        <img class="img-fluid hd_sml_img" src="imgs/slr_sml_pic.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <img class="img-fluid hd_sml_img pt-1" src="imgs/Icon ionic-ios-log-out.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+             <!-- ------------------------------------------------------------------------
+
+                                your content start here
+
+             ------------------------------------------------------------------------- -->
+
+
+             
+             <div class="container-fluid">
+             <div class="lst">
+                <div class="rectngl">
+                    <div class="frst frst1 wow animate__flipInY">
+                        <p style="font-size: 40px;">42</p>
+                        <p>Product sold</p>
+                    </div>
+                    <div class="frst frst1 wow animate__flipInY">
+                        <p style="font-size: 40px;">200</p>
+                        <p>In stock</p>
+                    </div>
+                    <div class="frst wow animate__flipInY">
+                        <p style="font-size: 40px;">2000 tk.</p>
+                        <p>Profit</p>
+                    </div>
+                </div>
+                <div class="scnd">
+                    <a href="#"><p style="color: white;">Active</p></a>
+                    <a href="#"><p style="color: rgb(223, 223, 223);">- Today -</p></a>
+                    <a href="#"><p style="color: rgb(223, 223, 223);">All time</p></a>
+                </div>
+            </div>
+             <div style="height: 40px;"></div>
+             <div class="frm">
+
+                <p style="line-height: 50px; color: #FC3400; font-size: 16px;"><i class="fa fa-plus" aria-hidden="true"></i>Add new product</p>
+                <div class="row">
+                    <div class="col-md-9">
+                        <form class="form-inline">
+                            <div class="form-group my-2">
+                              <label for="exampleInputEmail1" style="padding-right:10px;">Product Name</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your product name" style="width: 365px;">
+                            </div>
+                        </form>
+                        <div class="form-group mt-2">
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" style="width: 480px;"></textarea>
+                        </div>
+                        <div class="size">
+                            <span>Size</span>
+                              <div class="form-check-inline" style="margin-left: 20px;">
+                                <label class="form-check-label" >
+                                  <input type="checkbox" class="form-check-input" value="" >L
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="">XL
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="">XXL
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="">XXXL
+                                </label>
+                              </div>
+                        </div>
+
+                    </div>
+                        
+                     <div class="col-md-3">
+                            <label for="category">Category</label>
+                            <select name="category" id="category" style="background-color: #f5f5f5;">
+                            <option value="Men's Fashion">Men's Fashion</option>
+                            <option value="Women's Fashion">Women's Fashion</option>
+                            <option value="Health">Health</option>
+                            <option value="Accessories">Accessories</option>
+                            </select>
+                            <div class="quantity">
+                                <div class="prg mt-3"><p>Quantity</p></div>
+                                
+                                <div class="def-number-input number-input safari_only" style="margin: 10px;">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            
+                            </div>
+                            <form class="form-inline">
+                                <div class="form-group my-2">
+                                    <label for="exampleInputEmail1" style="padding-right:10px;">Price</label>
+                                    <input type="email" class="form-control mr-3" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 100px; height: 30px;">
+                                    <span>Tk</span>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary submit my-2" style="width: 230px; background-color: #FFAA00; border: 0px;">Submit</button>
+                     </div>   
+                     
+                </div>
+
+             </div>
+
+             
+                 <div class="topbx">
+                    <div class="srch">
+                        <p style="color: #cacaca;">Search by keyword</p>
+                        <img src="imgs/Icon awesome-search.png" width="22px">
+                    </div>
+                    <div class="viewall">
+                        <a href="#"><p style="text-align: right;">View all</p></a>
+                    </div>
+                 </div>
+                
+                 <div class="limiter">
+                    
+                     <div class="table100 wow animate__slideInUp">
+                         <table>
+                             
+                             <tbody>
+                                     <tr>
+                                         <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                         <td class="column2">
+                                             <p>Product Name-code</p>
+                                             <p>Price</p>
+                                         </td>
+                                         <td class="column3">
+                                            <p>227</p>
+                                            <p>In stock</p>
+                                         </td>
+                                         <td class="column4">
+                                            <p>70</p>
+                                            <p>Sold</p>
+                                         </td>
+                                         <td class="column5">
+                                            <p>2000 tk</p>
+                                            <p>Profit</p>
+                                         </td>
+                                         <td class="column6">20/07/2020 </td>
+                                         <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                         <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                         
+                                     </tr>
+                                     <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="column1"><img src="imgs/product.png" width="80px"></td>
+                                        <td class="column2">
+                                            <p>Product Name-code</p>
+                                            <p>Price</p>
+                                        </td>
+                                        <td class="column3">
+                                           <p>227</p>
+                                           <p>In stock</p>
+                                        </td>
+                                        <td class="column4">
+                                           <p>70</p>
+                                           <p>Sold</p>
+                                        </td>
+                                        <td class="column5">
+                                           <p>2000 tk</p>
+                                           <p>Profit</p>
+                                        </td>
+                                        <td class="column6">20/07/2020 </td>
+                                        <td class="column7"><img src="imgs/Icon material-mode-edit.png" width="15px"></td>
+                                        <td class="column8"><img src="imgs/Icon material-delete.png" width="15px"></td>
+                                        
+                                    </tr>
+                                     
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+ 
+             </div>
+             <!-- ------------------table end -->
+
+
+            <!-- ------------------------------------------------------------------------
+
+                                your content end here
+
+            ------------------------------------------------------------------------- -->
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modal for changing pro pic-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">wanna change your Profile Pic?</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload New image if you wish...</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="submit" class="btn btn-primary mt-2 float-right" name="submit">
+                      </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for notification icon-->
+    <div class="modal fade" id="ntic_modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Notification Panel</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for edite profile-->
+    <div class="modal fade" id="edite_modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Profile Edite Panel</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">New email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">New Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">New phonenumber</label>
+                        <input type="password" class="form-control" id="examplephonenumber" placeholder="Phonenumber">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">New Location</label>
+                        <input type="password" class="form-control" id="exampleInputLocation" placeholder="Location">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Are you Sure? If sure then place tik mark</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal for ban any seller-->
+    <div class="modal fade" id="ban_modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Alert</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h5>Are you completely sure to ban this seller from your shop?</h5>
+                    <p class="ml-5 mt-3" style="color: #3A4558;">Seller ID: 235235</p>
+                    <p class="ml-5 mb-3" style="color: #3A4558;">Seller Name: lorem Ipsum</p>
+                    <p style="color: orange; font-weight: 700;">If you ban this user he cannot countinue his work in your page!</p>
+                </div>
+                <button class="btn btn-primary mx-auto mb-3" style="width: 100px;">Confirm</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--pre footer start -->
+    <div style="height: 60px;"></div>
+	<div class="container-fluid" style="background-color: white;">
+		<div class="boxx1">
+			<img src="imgs/logo.png" alt="">
+			<div class="boxx">
+				<div class="phn">
+					<img src="imgs/Icon feather-phone.png" alt="">
+					<span>Hotline ********</span>
+				</div>
+				<div class="phn">
+					<img src="imgs/Icon material-mail-outline.png" alt="">
+					<span>emailaddress@gmail.com</span>
+				</div>
+				<div class="phn">
+					<img src="imgs/Icon feather-help-circle.png" alt="">
+					<span style="color: #1A20CA;">Need help about how to download?</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--pre footer end -->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- wow.js link & js code start-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animate__animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+              // the callback is fired every time an animation is started
+              // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+          }
+        );
+        wow.init();
+    </script>
+    <!-- wow.js link & js code end-->
+
+
+</body>
+
+</html>

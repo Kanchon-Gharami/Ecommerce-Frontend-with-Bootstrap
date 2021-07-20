@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Admin Dashboard</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- animated css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- Roboto font's link -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- Our Custom CSS -->
+
+    <link rel="stylesheet" href="style_dashboard.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <button type="button" class="mx-auto d-block model_none_btn" data-toggle="modal" data-target="#myModal">
+                    <img class="admn_pro_pic img-fluid mx-auto d-block wow animate__bounceIn" src="imgs/user_pro_pic.png">
+                </button>
+
+                
+                <h3 class="mt-3 ml-4">Admin name</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                    <p class="ml-2">
+                        <img src="imgs/Icon awesome-phone-alt.png" class="mr-1">
+                        +88 018 119379173
+                    </p>
+                    <p class="ml-2">
+                        <img src="imgs/Icon ionic-ios-mail.png" class="mr-1">
+                        emailaddress@gmail.com
+                    </p>
+                    <p class="ml-2">
+                        <img src="imgs/Icon material-location-on.png" class="mr-1">
+                        29, Area name, District
+                    </p>
+                    <p class="ml-2">
+                        NID No. XXX XXXX XXXX
+                    </p>
+                    <div class="my-2" style="border-bottom: 1px solid #467188;"></div>
+                
+                <li>
+                    <a href="#">
+                        <img src="imgs/Icon open-person.png" class="mr-1">
+                        Sellers
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="imgs/Icon material-directions-bike.png" class="mr-1">
+                        Delivery-boys
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="index.html" class="download">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+
+       
+
+        <!-- Page Content  -->
+        <div id="contentdshbrd">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rspnsvk">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+
+
+                    <img src="imgs/logo.png" class="logo_admn_mdl wow animate__rubberBand">
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="d-block model_none_btn" data-toggle="modal" data-target="#ntic_modal">
+                                        <img class="img-fluid hd_sml_img" src="imgs/Icon material-notifications.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="d-block model_none_btn" data-toggle="modal" data-target="#edite_modal">
+                                        <img class="img-fluid hd_sml_img" src="imgs/Icon feather-edit.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="d-block model_none_btn" data-toggle="modal" data-target="#myModal">
+                                        <img class="img-fluid hd_sml_img" src="imgs/slr_sml_pic.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <img class="img-fluid hd_sml_img pt-1" src="imgs/Icon ionic-ios-log-out.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+             <!-- ------------------------------------------------------------------------
+
+                                your content start here
+
+             ------------------------------------------------------------------------- -->
+
+
+            <div class="row px-5 rspnsv_chrt">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animate__zoomIn">
+                        <div class="data_cntnr dt_cntr_grad1 my-2 mx-auto">
+                            <div class="flex-column">
+                                <p class="data_num">200</p>
+                                <p class="data_title">total orders</p>
+                            </div>
+                            <img class="img-fluid float-right data-ico" src="imgs/data ico crt.png">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animate__zoomIn">
+                        <div class="data_cntnr dt_cntr_grad2 my-2 mx-auto">
+                            <div class="flex-column">
+                                <p class="data_num">2,000</p>
+                                <p class="data_title">total profit</p>
+                            </div>
+                            <img class="img-fluid float-right data-ico" src="imgs/data ico wallet.png">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animate__zoomIn">
+                        <div class="data_cntnr dt_cntr_grad3 my-2 mx-auto">
+                            <div class="flex-column">
+                                <p class="data_num">200</p>
+                                <p class="data_title">total shops</p>
+                            </div>
+                            <img class="img-fluid float-right data-ico" src="imgs/data ico prns.png">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animate__zoomIn">
+                        <div class="data_cntnr dt_cntr_grad4 my-2 mx-auto">
+                            <div class="flex-column">
+                                <p class="data_num">80</p>
+                                <p class="data_title">delivery this month</p>
+                            </div>
+                            <img class="img-fluid float-right data-ico" src="imgs/data ico bike.png">
+                        </div>
+                    </div>
+            </div>
+
+            <!-- height gap -->
+            <div style="height: 60px;"></div>
+
+            <div class="container-fluid">
+                <h3 style="color: #3A4558;">Order Details</h3>
+
+                <div class="limiter">
+                    <div class="table100">
+                        <table>
+                            <thead>
+                                <tr class="table100-head">
+                                    <th class="column1">Order ID</th>
+                                    <th class="column2">Product name</th>
+                                    <th class="column3">Quantity</th>
+                                    <th class="column4">Price</th>
+                                    <th class="column5">Customer name</th>
+                                    <th class="column6">Contact no.</th>
+                                    <th class="column7">Address</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">359, Sagorpara,Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#productmodal">
+                                        <td class="column1">1001</td>
+                                        <td class="column2">Product name</td>
+                                        <td class="column3">2</td>
+                                        <td class="column4">150/-</td>
+                                        <td class="column5">Customer name</td>
+                                        <td class="column6">017xxxxxxxx</td>
+                                        <td class="column7">Rajshahi</td>
+                                    </tr>
+                                    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- The Modal -->
+			  <div class="modal" id="productmodal">
+			    <div class="modal-dialog">
+			    	<div class="modal-content">
+			      
+				        <!-- Modal Header -->
+				        <div class="modal-header">
+				        	<h4 class="modal-title">Order Details</h4>
+				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        </div>
+				        
+				        <!-- Modal body -->
+				        <div class="modal-body">
+				        	<h5>Product name: pran gura moshla</h5>
+				        	<div class="row">
+				        		<img class="img-fluid mdlpic my-2 col-md-5 d-block mx-auto" src="imgs/P1.png">
+				        		<div class="my-2 col-md-7">
+				        			<ul style="color: grey;">
+				        				<li>Order ID: 1001</li>
+		                                <li>Quantity: 2</li>
+		                                <li>Price: 200</li>
+		                                <li>Customer name: lorem ipsum</li>
+		                                <li>Contact no: 018383921742</li>
+		                                <li>Address: 6478, panthopath, Dhaka</li> 
+				        			</ul>
+								</div>
+				        	</div>
+				        	<div class="mt-2 dtls_dscrptn ">
+				        		Descriptions: এই খানে প্রোডাক্টের বর্ননা থাকবে, In here Product description is added. Lorem Ipsum is simply dummy text of  the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and made in japan.
+				        	</div>
+				        </div>
+
+
+				        <!-- Modal footer -->
+				        <div class="modal-footer">
+				        	<button type="button" class="btn btn-info">Order Completed</button>
+				        	<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+				        </div>
+			        
+			    	</div>
+			    </div>
+			  </div>
+            <!-- ------------------table end -->
+
+
+            <!-- height gap -->
+            <div style="height: 80px;"></div>
+
+
+            <div class="container-fluid">
+                <h3 style="color: #3A4558;">Top Sellers</h3>
+                <div class="d-inline-block wow animate__slideInUp">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/slr 123.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/slr 123.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/slr 123.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/slr 123.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/slr 123.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/slr 123.png">
+                </div>
+            </div>
+
+            <!-- height gap -->
+            <div style="height: 60px;"></div>
+
+
+            <div class="container-fluid">
+                <h3 style="color: #3A4558;">Top Delivery-boys</h3>
+                <div class="d-inline-block wow animate__slideInUp">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/prd2134.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/prd2134.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/prd2134.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/prd2134.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/prd2134.png">
+                    <img class="img-fluid mx-4 img_slr_prd_crcl" src="imgs/prd2134.png">
+                </div>
+            </div>
+
+
+            <!-- height gap -->
+            <div style="height: 60px;"></div>
+
+
+            <div class="container-fluid">
+                <h3 style="color: #3D73DD;">
+                    <img class="mr-4" src="imgs/minus ban sgn.png" style="width: 25px;">
+                    Ban a seller/delivery-boy
+                </h3>
+                <form>
+                    <div class="input-group md-form form-sm form-2 pl-0 mt-3">
+                        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Search keyword or ID" aria-label="Search" style="max-width:400px;">
+                        <div class="input-group-append">
+                            <span class="input-group-text lime lighten-2" id="basic-text1">
+                                <input type="submit" name="" class="fas fa-search text-grey">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row d-flex inline-block my-4">
+                    <button type="button" class="model_none_btn" data-toggle="modal" data-target="#ban_modal">
+                        <div class="ban_cntnr mx-4 row">
+                            <img class="ban_banico mr-2 my-auto" src="imgs/Icon awesome-ban.png">
+                            <img class="ban_propic mr-5 my-auto" src="imgs/slr 123.png">
+                            <div class="flex-column float-right">
+                                <p class="ban_name">Seller Name</p>
+                                <p class="ban_id">Seller ID</p>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    <button type="button" class="model_none_btn" data-toggle="modal" data-target="#ban_modal">
+                        <div class="ban_cntnr mx-4 row">
+                            <img class="ban_banico mr-2 my-auto" src="imgs/Icon awesome-ban.png">
+                            <img class="ban_propic mr-5 my-auto" src="imgs/slr 123.png">
+                            <div class="flex-column float-right">
+                                <p class="ban_name">Seller Name</p>
+                                <p class="ban_id">Seller ID</p>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="model_none_btn" data-toggle="modal" data-target="#ban_modal">
+                        <div class="ban_cntnr mx-4 row">
+                            <img class="ban_banico mr-2 my-auto" src="imgs/Icon awesome-ban.png">
+                            <img class="ban_propic mr-5 my-auto" src="imgs/slr 123.png">
+                            <div class="flex-column float-right">
+                                <p class="ban_name">Seller Name</p>
+                                <p class="ban_id">Seller ID</p>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="model_none_btn" data-toggle="modal" data-target="#ban_modal">
+                        <div class="ban_cntnr mx-4 row">
+                            <img class="ban_banico mr-2 my-auto" src="imgs/Icon awesome-ban.png">
+                            <img class="ban_propic mr-5 my-auto" src="imgs/slr 123.png">
+                            <div class="flex-column float-right">
+                                <p class="ban_name">Seller Name</p>
+                                <p class="ban_id">Seller ID</p>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="model_none_btn" data-toggle="modal" data-target="#ban_modal">
+                        <div class="ban_cntnr mx-4 row">
+                            <img class="ban_banico mr-2 my-auto" src="imgs/Icon awesome-ban.png">
+                            <img class="ban_propic mr-5 my-auto" src="imgs/slr 123.png">
+                            <div class="flex-column float-right">
+                                <p class="ban_name">Seller Name</p>
+                                <p class="ban_id">Seller ID</p>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="model_none_btn" data-toggle="modal" data-target="#ban_modal">
+                        <div class="ban_cntnr mx-4 row">
+                            <img class="ban_banico mr-2 my-auto" src="imgs/Icon awesome-ban.png">
+                            <img class="ban_propic mr-5 my-auto" src="imgs/slr 123.png">
+                            <div class="flex-column float-right">
+                                <p class="ban_name">Seller Name</p>
+                                <p class="ban_id">Seller ID</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <!-- ------------------------------------------------------------------------
+
+                                your content end here
+
+            ------------------------------------------------------------------------- -->
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modal for changing pro pic-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">wanna change your Profile Pic?</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload New image if you wish...</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="submit" class="btn btn-primary mt-2 float-right" name="submit">
+                      </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for notification icon-->
+    <div class="modal fade" id="ntic_modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Notification Panel</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                        <li class="my-1">lorem ipsum messege for you.... are you happy?</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for edite profile-->
+    <div class="modal fade" id="edite_modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Profile Edite Panel</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">New email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">New Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">New phonenumber</label>
+                        <input type="password" class="form-control" id="examplephonenumber" placeholder="Phonenumber">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">New Location</label>
+                        <input type="password" class="form-control" id="exampleInputLocation" placeholder="Location">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Are you Sure? If sure then place tik mark</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal for ban any seller-->
+    <div class="modal fade" id="ban_modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Alert</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h5>Are you completely sure to ban this seller from your shop?</h5>
+                    <p class="ml-5 mt-3" style="color: #3A4558;">Seller ID: 235235</p>
+                    <p class="ml-5 mb-3" style="color: #3A4558;">Seller Name: lorem Ipsum</p>
+                    <p style="color: orange; font-weight: 700;">If you ban this user he cannot countinue his work in your page!</p>
+                </div>
+                <button class="btn btn-primary mx-auto mb-3" style="width: 100px;">Confirm</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- wow.js link & js code start-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animate__animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+              // the callback is fired every time an animation is started
+              // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+          }
+        );
+        wow.init();
+    </script>
+    <!-- wow.js link & js code end-->
+
+
+</body>
+
+</html>

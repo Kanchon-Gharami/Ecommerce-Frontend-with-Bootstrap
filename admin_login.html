@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<!-- animated css link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+	<!-- font awsome css link -->	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- custom css link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div class="col-lg-4 col-md-8 col-sm-8 admn_lgin_cntnr mx-auto">
+		<div class="my-5"></div>
+		<img class="img-fluid mx-auto d-block admn_user_pic" src="imgs/admnuserpic.png">
+		<div class="my-4"></div>
+		<p class="admnlgnhdr text-center">Admin Login</p>
+
+		<!-- Default form login -->
+		<form class="text-center p-5" action="#!">
+		    <!-- Email -->
+		    <input type="text" id="UsernameId" class="form-control mb-4" placeholder="Username" required>
+
+		    <!-- Password -->
+		    <input type="password" id="PasswordId" class="form-control mb-4" placeholder="Password" required>
+
+		    <div class="d-flex justify-content-around">
+		        <div>
+		            <!-- Remember me -->
+		            <div class="custom-control custom-checkbox">
+		                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+		                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+		            </div>
+		        </div>
+		        <div>
+		            <!-- Forgot password -->
+		            <a href="">Forgot password?</a>
+		        </div>
+		    </div>
+
+		    <!-- Sign in button -->
+		    <button class="btn btn-block my-4 lgnadmsbmt" type="submit">Sign in</button>
+
+		    <!-- Register -->
+		    <p>Not a member?
+		        <a href="">Register</a>
+		    </p>
+
+		</form>
+		<!-- Default form login -->
+		
+	</div>
+	
+</body>
+
+
+<!-- wow.js link & js code start-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script>
+	var wow = new WOW(
+	{
+		boxClass:     'wow',      // animated element css class (default is wow)
+	    animateClass: 'animate__animated', // animation css class (default is animated)
+	    offset:       0,          // distance to the element when triggering the animation (default is 0)
+	    mobile:       true,       // trigger animations on mobile devices (default is true)
+	    live:         true,       // act on asynchronously loaded content (default is true)
+	    callback:     function(box) {
+	      // the callback is fired every time an animation is started
+	      // the argument that is passed in is the DOM node being animated
+	    },
+	    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+	    resetAnimation: true,     // reset animation on end (default is true)
+	  }
+	);
+	wow.init();
+</script>
+<!-- wow.js link & js code end-->
+
+
+
+
+</html>
+
+

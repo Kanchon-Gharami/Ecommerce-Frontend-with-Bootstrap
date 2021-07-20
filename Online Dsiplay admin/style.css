@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto';
+}
+
+
+  /*--------------------------------------------------------------------
+					  admin login style start
+  --------------------------------------------------------------------*/
+
+
+.admn_lgin_cntnr{
+	height: 600px;
+	border: 1px solid #827FFE;
+	border-radius: 5px;
+	margin-top: 5%;
+}
+
+.admn_user_pic{
+	width: 100px;
+	height: auto;
+
+}
+
+.admnlgnhdr{
+	font-size: 32px;
+	color: #434343;
+}
+
+.lgnadmsbmt{
+	background: #827FFE;
+	color: white;
+}
+
+.lgnadmsbmt:hover{
+	background: #827FFE;
+	color: white;
+}
+
+
+
+  /*--------------------------------------------------------------------
+					  admin login style end
+  --------------------------------------------------------------------*/
